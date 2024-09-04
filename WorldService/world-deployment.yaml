@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: world-deployment
+  name: world-service
 spec:
   replicas: 1
   selector:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: world-service
-        image: vyshnavidp/world-service:latest
+        image: vyshnavidp/world-service
         ports:
         - containerPort: 8001

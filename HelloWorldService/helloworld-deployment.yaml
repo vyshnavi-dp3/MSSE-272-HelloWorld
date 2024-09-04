@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloworld-deployment
+  name: helloworld-service
 spec:
   replicas: 1
   selector:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: helloworld-service
-        image: vyshnavidp/hello-world-service:latest
+        image: vyshnavidp/hello-world-service
         ports:
         - containerPort: 8002
