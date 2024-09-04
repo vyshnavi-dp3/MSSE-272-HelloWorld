@@ -39,6 +39,7 @@ _Response_: Returns the string "World".
 _Port_: 8001
 
 **HelloWorld Service:**
+
 _Endpoint_: /helloworld
 
 _Response_: Combines the responses from the Hello and World services to return "Hello World".
@@ -46,27 +47,38 @@ _Response_: Combines the responses from the Hello and World services to return "
 _Port_: 8002
 
 ### 3. Dockerization
+
 Each microservice will be containerized using Docker. A Dockerfile will be created for each microservice, and Docker images will be built and run locally to ensure that they function independently.
 
 ### 4. Kubernetes Deployment
+
 Using Minikube, you will deploy the microservices to a Kubernetes cluster. Kubernetes manifests will be created for each microservice, defining their deployment and services to ensure proper communication between them.
 
 ### 5. Integration and Testing
+
 The HelloWorld Service will fetch responses from the Hello and World microservices.
 Each service will be exposed through Kubernetes, and the combined message "Hello World" should be accessible via the HelloWorld Service.
 Setup Instructions
+
 **A. Prerequisites**
 Install Node.js from Node.js official website.
+
 Install Docker from Docker official website.
+
 Install Minikube from Minikube Installation Guide.
+
 Set up Git for version control.
+
 **B. Cloning the Repository**
+
 Clone or initialize a Git repository for your project:
+
 ```
 git clone <your-repository-url>
 
 ```
 **C. Running the Microservices Locally**
+
 Navigate to each microservice folder (HelloService, WorldService, HelloWorldService).
 _Install dependencies: HelloService, WorldService_
 ```
@@ -83,6 +95,7 @@ npm install axios
 
 ```
 _Run each microservice:_
+
 ```
 node index.js
 
@@ -92,16 +105,24 @@ For each microservice, build Docker images and push images to docker hub for min
 ```
 docker build -t <service-name> .
 docker push <service-name>
+
 ```
 **E. Deploying to Kubernetes**
+
 Start Minikube:
+```
 minikube start
 
+```
+
 _Apply the Kubernetes manifests:deployment,service files_
+
 ```
 kubectl apply -f <manifest-file>.yaml
+
 ```
 _Access the services via the Minikube service command:_
+
 ```
 minikube service <service-name>
 
