@@ -35,7 +35,7 @@ _Port_: 8002
 ### 3. Dockerization
 Each microservice will be containerized using Docker. A Dockerfile will be created for each microservice, and Docker images will be built and run locally to ensure that they function independently.
 
-#### 4. Kubernetes Deployment
+### 4. Kubernetes Deployment
 Using Minikube, you will deploy the microservices to a Kubernetes cluster. Kubernetes manifests will be created for each microservice, defining their deployment and services to ensure proper communication between them.
 
 ### 5. Integration and Testing
@@ -43,14 +43,19 @@ The HelloWorld Service will fetch responses from the Hello and World microservic
 Each service will be exposed through Kubernetes, and the combined message "Hello World" should be accessible via the HelloWorld Service.
 Setup Instructions
 **A. Prerequisites**
+
 Install Node.js from Node.js official website.
 Install Docker from Docker official website.
 Install Minikube from Minikube Installation Guide.
 Set up Git for version control.
+
 **B. Cloning the Repository**
 Clone or initialize a Git repository for your project:
 
-git clone <your-repository-url>
+```
+git clone <repository-url>
+```
+
 **C. Running the Microservices Locally**
 Navigate to each microservice folder (HelloService, WorldService, HelloWorldService).
 _Install dependencies: HelloService, WorldService_
