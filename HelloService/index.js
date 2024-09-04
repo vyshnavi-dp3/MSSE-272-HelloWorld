@@ -6,4 +6,6 @@ app.get('/hello', (req, res) => {
 });
 
 const port = 8000;
-
+app.listen(port, () => {
+    console.log(`Hello Server is running on port:${port}`);
+});

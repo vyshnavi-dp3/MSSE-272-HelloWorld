@@ -17,3 +17,6 @@ app.get('/helloworld', async (req, res) => {
 });
 
 const port = 8002;
+app.listen(port, () => {
+    console.log(`Server is running on port:${port}`);
+});
