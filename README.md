@@ -6,7 +6,9 @@ The goal of this project is to build a simple "Hello World" microservices applic
 The project consists of three microservices:
 
 Hello Service: Returns the string "Hello".
+
 World Service: Returns the string "World".
+
 HelloWorld Service: Combines the responses from the Hello and World services to return "Hello World".
 
 These microservices will be individually containerized using Docker, and the application will be deployed on a Kubernetes cluster for orchestration using minikube.
@@ -21,17 +23,28 @@ Before starting the project, ensure you have the following tools installed:
 **Git** (for version control)
 ### 2. Microservices Implementation
 **Hello Service:**
+
 _Endpoint_: /hello
+
 _Response_: Returns the string "Hello".
+
 _Port_: 8000
+
 **World Service:**
+
 _Endpoint_: /world
+
 _Response_: Returns the string "World".
+
 _Port_: 8001
+
 **HelloWorld Service:**
 _Endpoint_: /helloworld
+
 _Response_: Combines the responses from the Hello and World services to return "Hello World".
+
 _Port_: 8002
+
 ### 3. Dockerization
 Each microservice will be containerized using Docker. A Dockerfile will be created for each microservice, and Docker images will be built and run locally to ensure that they function independently.
 
