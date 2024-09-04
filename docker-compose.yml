@@ -1,0 +1,17 @@
+version: '3'
+services:
+  hello-service:
+    build: ./helloservice
+    ports:
+      - "8000:8000"
+  world-service:
+    build: ./worldservice
+    ports:
+      - "8001:8001"
+  helloworld-service:
+    build: ./helloworldservice
+    ports:
+      - "8002:8002"
+    depends_on:
+      - hello-service
+      - world-service
