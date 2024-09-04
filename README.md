@@ -35,7 +35,7 @@ _Port_: 8002
 ### 3. Dockerization
 Each microservice will be containerized using Docker. A Dockerfile will be created for each microservice, and Docker images will be built and run locally to ensure that they function independently.
 
-#### 4. Kubernetes Deployment
+### 4. Kubernetes Deployment
 Using Minikube, you will deploy the microservices to a Kubernetes cluster. Kubernetes manifests will be created for each microservice, defining their deployment and services to ensure proper communication between them.
 
 ### 5. Integration and Testing
@@ -49,8 +49,10 @@ Install Minikube from Minikube Installation Guide.
 Set up Git for version control.
 **B. Cloning the Repository**
 Clone or initialize a Git repository for your project:
-
+```
 git clone <your-repository-url>
+
+```
 **C. Running the Microservices Locally**
 Navigate to each microservice folder (HelloService, WorldService, HelloWorldService).
 _Install dependencies: HelloService, WorldService_
@@ -68,7 +70,10 @@ npm install axios
 
 ```
 _Run each microservice:_
+```
 node index.js
+
+```
 **D. Building Docker Images**
 For each microservice, build Docker images and push images to docker hub for minikube to recognise:
 ```
@@ -89,10 +94,10 @@ minikube service <service-name>
 
 ```
 
-##Testing and Validation
+## Testing and Validation
 Ensure that the Hello service returns "Hello".
 Ensure that the World service returns "World".
 Access the HelloWorld service and confirm that it returns the combined message "Hello World".
 
-##Conclusion:
+## Conclusion:
 This project demonstrates the use of microservices architecture using Node.js, Docker, and Kubernetes. You will learn to containerize services, deploy them on a Kubernetes cluster, and test their integration, laying the foundation for working with modern cloud-native applications.
