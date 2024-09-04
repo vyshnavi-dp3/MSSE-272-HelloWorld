@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: world-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: world-service
+  template:
+    metadata:
+      labels:
+        app: world-service
+    spec:
+      containers:
+      - name: world-service
+        image: vyshnavidp/world-service
+        ports:
+        - containerPort: 8001
