@@ -110,8 +110,6 @@ docker push <your-dockerId>/<service-name>
 
 <img width="1440" alt="Screenshot 2024-09-04 at 3 46 11 PM" src="https://github.com/user-attachments/assets/f9d2d5f4-29e9-4445-bb34-f36c423bc0ca">
 
-<img width="1440" alt="Screenshot 2024-09-04 at 3 46 11 PM" src="https://github.com/user-attachments/assets/f863c2cc-1e5e-4c87-8d3a-410ace0bb86b">
-
 
 **E. Docker containers :**
 
