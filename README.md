@@ -108,6 +108,11 @@ docker push <your-dockerId>/<service-name>
 
 ```
 
+<img width="1440" alt="Screenshot 2024-09-04 at 3 46 11 PM" src="https://github.com/user-attachments/assets/f9d2d5f4-29e9-4445-bb34-f36c423bc0ca">
+
+<img width="1440" alt="Screenshot 2024-09-04 at 3 46 11 PM" src="https://github.com/user-attachments/assets/f863c2cc-1e5e-4c87-8d3a-410ace0bb86b">
+
+
 **E. Docker containers :**
 
 HelloService : https://hub.docker.com/repository/docker/vyshnavidp/hello-service/general
@@ -141,6 +146,9 @@ minikube service <service-name>
 Ensure that the Hello service returns "Hello".
 Ensure that the World service returns "World".
 Access the HelloWorld service and confirm that it returns the combined message "Hello World".
+
+<img width="1440" alt="Screenshot 2024-09-04 at 3 46 11 PM" src="https://github.com/user-attachments/assets/f35cfc48-ba40-4cfd-b8c6-61987d59be2a">
+
 
 ## Conclusion:
 This project demonstrates the use of microservices architecture using Node.js, Docker, and Kubernetes. You will learn to containerize services, deploy them on a Kubernetes cluster, and test their integration, laying the foundation for working with modern cloud-native applications.
