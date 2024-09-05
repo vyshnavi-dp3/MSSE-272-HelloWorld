@@ -103,11 +103,18 @@ node index.js
 **D. Building Docker Images**
 For each microservice, build Docker images and push images to docker hub for minikube to recognise:
 ```
-docker build -t <service-name> .
-docker push <service-name>
+docker build -t <your-dockerId>/<service-name> .
+docker push <your-dockerId>/<service-name>
 
 ```
-**E. Deploying to Kubernetes**
+
+**E. Docker Hub container for three Microservices :**
+
+HelloService : https://hub.docker.com/repository/docker/vyshnavidp/hello-service/general
+WorldService : https://hub.docker.com/repository/docker/vyshnavidp/world-service/general
+HelloWorldService : https://hub.docker.com/repository/docker/vyshnavidp/hello-world-service/general
+
+**F. Deploying to Kubernetes**
 
 Start Minikube:
 ```
