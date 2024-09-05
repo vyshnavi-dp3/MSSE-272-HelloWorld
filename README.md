@@ -108,7 +108,7 @@ docker push <your-dockerId>/<service-name>
 
 ```
 
-**E. Docker Hub container for three Microservices :**
+**E. Docker containers :**
 
 HelloService : https://hub.docker.com/repository/docker/vyshnavidp/hello-service/general
 
